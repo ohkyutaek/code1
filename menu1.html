@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 목록</title>
+    <style>
+    body{
+    margin:0;
+    padding:0;
+    background-color: antiquewhite;
+    }
+
+    table{
+        border-collapse: collapse;
+    }
+    caption{
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .sss{
+        padding: 50px;
+    }
+
+    .ss{
+        width: 100%;
+        border-top: 2px solid green;
+    }
+
+    .sss th,
+    .ss td{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .ss tr{
+        border-bottom: 3px solid #ccc;
+    }
+
+    .ss td{
+        text-align: center;
+    }
+
+    .ss .tit {
+        text-align: left;
+    }
+    .ss .tit:hover {
+        text-decoration: underline;
+    }
+
+    .sss .paging{
+        margin-top: 20px;
+        font-size: 0px;
+        text-align: center;
+    }
+
+    .sss .paging a{
+        display: inline-block;
+        margin-left: 10px;
+        padding: 5px 10px;
+        border-radius: 100px;
+        font-size:  12px;
+    }
+    
+    .sss .paging a:first-child {
+        margin-left: 0px;
+    }
+
+    .sss .paging a.bt{
+        border: 1px solid #eee;
+        background: #eee;
+    }
+
+    .sss .paging a.num{
+        border: 1px solid #000;
+        font-weight: 600;
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="sss">
+        <table class="ss">
+            <caption>게시판 목록</caption>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>작성</th>
+                    <th>조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="tit"><a href="#">OH~!PUPPY! 여러분들의 지식 공유★</a>
+                    </td>
+                    <td>관리자</td>
+                    <td>2020-06-29</td>
+                    <td>32372</td>
+                <tr>
+                    <td>2</td>
+                    <td class="tit"><a href="#">반려견 산책시 꼭필요!!</a>
+                    </td>
+                    <td>강아지</td>
+                    <td>2020-04-21</td>
+                    <td>27869</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="tit"><a href="#">반려견 몸에 좋은 간식 추천!!</a>
+                    </td>
+                    <td>애견 사랑이</td>
+                    <td>2020-04-01</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="tit"><a href="#">반려견 절대 먹으면 안되는 음식!!</a>
+                    </td>
+                    <td>수의사</td>
+                    <td>2020-02-11</td>
+                    <td>12997</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="tit"><a href="#">반려견 미용법 공유 합니다.</a>
+                    </td>
+                    <td>애견 미용사</td>
+                    <td>2020-01-10</td>
+                    <td>22999</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="tit"><a href="#">반려견들 구토 색으로 구분하는 병증</a>
+                    </td>
+                    <td>강아지 박사</td>
+                    <td>2019-12-19</td>
+                    <td>12288</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="tit"><a href="#">강아지 훈련법 대공개</a>
+                    </td>
+                    <td>훈련 장인</td>
+                    <td>2019-12-11</td>
+                    <td>122881</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="tit"><a href="#">반려견 종류 정리한거 공유해요~~</a>
+                    </td>
+                    <td>내친구 반려견</td>
+                    <td>2019-12-10</td>
+                    <td>12288</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="tit"><a href="#">반려견 놀이터 알려드려요</a>
+                    </td>
+                    <td>비공개</td>
+                    <td>2019-12-07</td>
+                    <td>52871</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="tit"><a href="#">반려견 키우려하는데 TIP좀 알려주세요ㅜㅠ</a>
+                    </td>
+                    <td>초보입니다</td>
+                    <td>2019-12-02</td>
+                    <td>37588</td>
+                </tr>
+                
+            </tbody>
+        </table>    
+            <div class="paging">
+                <a href="#" class="bt">첫 페이지</a>
+                <a href="#" class="bt">이전 페이지</a>
+                <a href="#" class="num">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="bt">다음 페이지</a>
+                <a href="#" class="bt">마지막 페이지</a>
+            </div>
+    </div>
+</body>
+</html>
